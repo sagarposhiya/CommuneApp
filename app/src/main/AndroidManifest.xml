@@ -205,8 +205,7 @@
             android:theme="@style/FullScreenTheme" />
         <activity
             android:name="com.devlomi.commune.activities.setup.SetupUserActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.devlomi.commune.activities.NewGroupActivity"
             android:theme="@style/AppTheme.NoActionBar" />

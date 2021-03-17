@@ -13,6 +13,8 @@
     <color name="colorGreen">#20b66e</color>
     <color name="colorBlue">#0080D4</color>
 
+    <color name="all_btn_color">#3350ED</color>
+
     <color name="status_header_text_color">@color/blue</color>
     <color name="bgColor">#FFFFFF</color>
     <color name="cardBgColor">#FFFFFF</color>

@@ -3,6 +3,7 @@ package com.devlomi.commune.views;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.text.Editable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
@@ -20,6 +21,7 @@ public class OTPEditText extends AppCompatEditText {
     private float mLineStroke = 2;
     private Paint mLinesPaint;
     private OnClickListener mClickListener;
+    private Canvas canvas;
 
     public OTPEditText(Context context) {
         super(context);
@@ -39,9 +41,11 @@ public class OTPEditText extends AppCompatEditText {
         float multi = context.getResources().getDisplayMetrics().density;
         mLineStroke = multi * mLineStroke;
         mLinesPaint = new Paint(getPaint());
+        mLinesPaint.setColor(getResources().getColor(R.color.all_btn_color));
+        mLinesPaint.setStyle(Paint.Style.STROKE);
         mLinesPaint.setStrokeWidth(mLineStroke);
-        mLinesPaint.setColor(getResources().getColor(R.color.otp_line_color));
-        setBackgroundResource(R.drawable.a_otp_box);
+//        canvas.drawRect(0,0,100,100, myPaint);
+//        mLinesPaint.setColor(getResources().getColor(R.color.otp_line_color));
         mSpace = multi * mSpace; //convert to pixels for our density
         mLineSpacing = multi * mLineSpacing; //convert to pixels for our density
         mNumChars = mMaxLength;
@@ -84,7 +88,9 @@ public class OTPEditText extends AppCompatEditText {
         getPaint().getTextWidths(getText(), 0, textLength, textWidths);
 
         for (int i = 0; i < mNumChars; i++) {
-            canvas.drawLine(startX, bottom, startX + mCharSize, bottom, mLinesPaint);
+            canvas.drawRoundRect(new RectF(startX, 10, startX + mCharSize, bottom), 6, 6, mLinesPaint);
+//            canvas.drawRect(20, 20, 50, 50, mLinesPaint);
+//            canvas.drawRoundRect(new RectF(0, 0, 110, 110), 6, 6, mLinesPaint);
             if (getText().length() > i) {
                 float middle = startX + mCharSize / 2;
                 canvas.drawText(text, i, i + 1, middle - textWidths[0] / 2, bottom - mLineSpacing, getTextPaint());

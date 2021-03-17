@@ -23,9 +23,10 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
+        android:fontFamily="@font/aa_app_font_median"
         android:adjustViewBounds="true"
         android:text="Welcome To Commune"
-        android:textSize="30dp"
+        android:textSize="27dp"
         android:textColor="#000"
         android:src="@drawable/a_wel_string" />
 
@@ -37,9 +38,10 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
             android:layout_gravity="center"
+            android:adjustViewBounds="true"
             android:src="@drawable/a_msg_img" />
 
 
@@ -60,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="53dp"
         android:adjustViewBounds="true"
         android:padding="1dp"
         android:src="@drawable/a_agree_continue"
