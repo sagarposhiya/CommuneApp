@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.setup.SetupUserActivity"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile info"
+            android:textSize="25dp"
+            android:layout_marginTop="65dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/aa_app_font_median"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please provide your name and an optional profile photo"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textColor="#000"/>
+
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_img_setup"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_data_user" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar_setup_user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/aa_icic_camera"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/colorText"
+                android:id="@+id/et_username_setup"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:background="@drawable/aa_number_bg"
+                android:textColorHint="@color/colorTextDesc"
+                android:hint="@string/enter_your_name"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:paddingLeft="25dp"
+                android:paddingRight="8dp" />
+
+
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:textColor="@color/colorText"
+            android:visibility="visible"
+            android:id="@+id/check_text_view_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:buttonTint="#3350EE"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/restore_backup" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fab_setup_user"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/a_next" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

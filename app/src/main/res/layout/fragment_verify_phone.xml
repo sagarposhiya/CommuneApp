@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.authentication.VerifyPhoneFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.authentication.VerifyPhoneFragment">
+
+
+        <TextView
+            android:id="@+id/tv_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:gravity="center_horizontal"
+            android:text="@string/otp_verification"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aa_app_font_median"
+            android:textColor="@color/otp_text_color"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_otp_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_the_otp_sent_to"
+            android:textColor="#474747"
+            android:textSize="17dp"
+ />
+
+        <com.devlomi.commune.views.OTPEditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:inputType="number"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+</ScrollView>

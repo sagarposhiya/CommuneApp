@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.googlecode.ez-vcard:ez-vcard:0.10.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.ez-vcard/ez-vcard/0.10.3/dd1affdc486a0f7f3b04b3ff7651346a7dcf7e7d/ez-vcard-0.10.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.ez-vcard/ez-vcard/0.10.3/57c36e495b665097ecea194f740968cd6db94773/ez-vcard-0.10.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.ez-vcard/ez-vcard/0.10.3/18a267cf1b253a07e83d2c0e95ee37579d7bfc9b/ez-vcard-0.10.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

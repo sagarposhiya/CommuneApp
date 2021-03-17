@@ -1,0 +1,35 @@
+
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.ProfilePreferenceFragment"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/pref_header_profile" />
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.SettingsActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/pref_header_notifications" />
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.SecurityPreferencesFragment"
+        android:icon="@drawable/ic_security"
+        android:title="@string/security" />
+
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.SettingsActivity$ChatSettingsPreferenceFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/pref_header_chat" />
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.PrivacyPolicyFragment"
+        android:icon="@drawable/ic_policy_24px"
+        android:title="@string/privacy_policy" />
+
+    <header
+        android:fragment="com.devlomi.commune.activities.settings.AboutFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/pref_header_about" />
+</preference-headers>

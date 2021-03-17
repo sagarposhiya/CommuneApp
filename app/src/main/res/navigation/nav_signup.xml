@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_signup"
+    app:startDestination="@id/enterPhoneNumberFragment">
+
+    <fragment
+
+        android:id="@+id/enterPhoneNumberFragment"
+        android:name="com.devlomi.commune.activities.authentication.EnterPhoneNumberFragment"
+        android:label="fragment_enter_phone_number"
+        tools:layout="@layout/fragment_enter_phone_number" >
+        <action
+            android:id="@+id/action_enterPhoneNumberFragment_to_verifyPhoneFragment"
+            app:destination="@id/verifyPhoneFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyPhoneFragment"
+        android:name="com.devlomi.commune.activities.authentication.VerifyPhoneFragment"
+        android:label="fragment_verify_phone"
+        tools:layout="@layout/fragment_verify_phone" >
+    </fragment>
+</navigation>

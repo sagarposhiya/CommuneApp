@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.authentication.EnterPhoneNumberFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.authentication.EnterPhoneNumberFragment">
+
+
+        <TextView
+            android:id="@+id/tv_enter_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/aa_app_font_median"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_your_phone_number"
+            android:textColor="@color/colorText"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_phone_auth_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:gravity="center_horizontal"
+            android:text="@string/phone_auth_info"
+            android:textColor="@color/colorText"
+            android:textSize="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/aa_number_bg"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                app:ccp_contentColor="@color/colorText"
+                app:ccp_textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:hint="123 123456"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorTextDesc"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:id="@+id/btn_verify"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="65dp"
+            android:src="@drawable/a_next"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

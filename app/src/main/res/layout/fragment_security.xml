@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.settings.SecurityPreferencesFragment">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_unlock_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unlock_with_fingerprint"
+        android:textColor="@color/colorText" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="when enabled, you will use your fingerprint to open the app"
+        android:textColor="@color/colorTextDesc" />
+
+
+    <TextView
+        android:id="@+id/tv_lock_after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lock_after"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_lock_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <RadioButton
+            android:id="@+id/btn_radio_immediately"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/immediately"
+            android:textColor="@color/colorText" />
+
+
+        <RadioButton
+            android:id="@+id/btn_radio_one_minute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/after_1_minute"
+            android:textColor="@color/colorText" />
+
+
+        <RadioButton
+            android:id="@+id/btn_radio_five_minutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/after_5_minutes"
+            android:textColor="@color/colorText" />
+
+
+        <RadioButton
+            android:id="@+id/btn_radio_thirty_minutes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/after_30_minutes"
+            android:textColor="@color/colorText" />
+    </RadioGroup>
+
+
+</LinearLayout>

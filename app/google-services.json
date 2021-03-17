@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553039512911",
+    "project_id": "commune-64a0e",
+    "storage_bucket": "commune-64a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553039512911:android:04ba4a1ce6904be148313a",
+        "android_client_info": {
+          "package_name": "com.devlomi.commune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553039512911-b9j46qqktetoiehp5geddg5rtdlc758r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWP55h2wEp4tM55QlbKFlyRo6OUUTc8P8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553039512911-b9j46qqktetoiehp5geddg5rtdlc758r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_seen_by"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="75dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    android:visibility="gone"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginBottom="8dp"
+
+            android:id="@+id/arrow_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_arrow_up" />
+
+        <TextView
+            android:text="0"
+            android:drawablePadding="6dp"
+            android:id="@+id/tv_seen_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            app:drawableLeftCompat="@drawable/ic_remove_red_eye"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="8 Users" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_seen_by"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

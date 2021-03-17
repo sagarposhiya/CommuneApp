@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_settings"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.devlomi.commune.activities.settings.SettingsFragment"
+        android:label="@string/Settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_profilePreferenceFragment"
+            app:destination="@id/profilePreferenceFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_notificationPreferenceFragment"
+            app:destination="@id/notificationPreferenceFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_chatSettingsPreferenceFragment2"
+            app:destination="@id/chatSettingsPreferenceFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_securityPreferencesFragment"
+            app:destination="@id/securityPreferencesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePreferenceFragment"
+        android:name="com.devlomi.commune.activities.settings.ProfilePreferenceFragment"
+        android:label="@string/profile" />
+    <fragment
+        android:id="@+id/notificationPreferenceFragment"
+        android:name="com.devlomi.commune.activities.settings.NotificationPreferenceFragment"
+        android:label="@string/notifications" />
+    <fragment
+        android:id="@+id/chatSettingsPreferenceFragment"
+        android:name="com.devlomi.commune.activities.settings.ChatSettingsPreferenceFragment"
+        android:label="@string/chat" />
+    <fragment
+        android:id="@+id/securityPreferencesFragment"
+        android:name="com.devlomi.commune.activities.settings.SecurityPreferencesFragment"
+        android:label="@string/security"
+        tools:layout="@layout/fragment_security" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.devlomi.commune.activities.settings.PrivacyPolicyFragment"
+        android:label="@string/privacy_policy" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.devlomi.commune.activities.settings.AboutFragment"
+        android:label="@string/about" />
+</navigation>

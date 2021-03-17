@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireApp_Android_App_-_V1.3.3.iml" filepath="$PROJECT_DIR$/.idea/modules/FireApp_Android_App_-_V1.3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FireApp_Android_App_-_V1.3.3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FireApp_Android_App_-_V1.3.3.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cameraView/FireApp_Android_App_-_V1.3.3.cameraView.iml" filepath="$PROJECT_DIR$/.idea/modules/cameraView/FireApp_Android_App_-_V1.3.3.cameraView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imageeditengine/FireApp_Android_App_-_V1.3.3.imageeditengine.iml" filepath="$PROJECT_DIR$/.idea/modules/imageeditengine/FireApp_Android_App_-_V1.3.3.imageeditengine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stories-progress-view/FireApp_Android_App_-_V1.3.3.stories-progress-view.iml" filepath="$PROJECT_DIR$/.idea/modules/stories-progress-view/FireApp_Android_App_-_V1.3.3.stories-progress-view.iml" />
+    </modules>
+  </component>
+</project>
