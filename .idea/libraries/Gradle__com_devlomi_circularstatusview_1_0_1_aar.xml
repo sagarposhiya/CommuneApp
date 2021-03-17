@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.devlomi:circularstatusview:1.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19614662a68f3b6ae43ac35f3bc778e3/jetified-circularstatusview-1.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19614662a68f3b6ae43ac35f3bc778e3/jetified-circularstatusview-1.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19614662a68f3b6ae43ac35f3bc778e3/jetified-circularstatusview-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5873d6f20e085b17f8821a77c4fa2f1f/jetified-circularstatusview-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5873d6f20e085b17f8821a77c4fa2f1f/jetified-circularstatusview-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5873d6f20e085b17f8821a77c4fa2f1f/jetified-circularstatusview-1.0.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.devlomi/circularstatusview/1.0.1/ce9dede5c65f43a76dd67b4f6c6da705e678f256/circularstatusview-1.0.1-javadoc.jar!/" />

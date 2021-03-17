@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.FrangSierra:RxFirebase:1.5.6@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac22c3db7b8d1262d8bbb3d27ff21330/jetified-RxFirebase-1.5.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac22c3db7b8d1262d8bbb3d27ff21330/jetified-RxFirebase-1.5.6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ac22c3db7b8d1262d8bbb3d27ff21330/jetified-RxFirebase-1.5.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5ebec91d145c93198af18328925a74d4/jetified-RxFirebase-1.5.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5ebec91d145c93198af18328925a74d4/jetified-RxFirebase-1.5.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5ebec91d145c93198af18328925a74d4/jetified-RxFirebase-1.5.6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

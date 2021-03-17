@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.devlomi.hidely:hidely:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dc3cfa140faa4a7acccc0dad4664a3/jetified-hidely-1.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dc3cfa140faa4a7acccc0dad4664a3/jetified-hidely-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53dc3cfa140faa4a7acccc0dad4664a3/jetified-hidely-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b8ae1ddca5f3042f68dd417bf11e1b9/jetified-hidely-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b8ae1ddca5f3042f68dd417bf11e1b9/jetified-hidely-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b8ae1ddca5f3042f68dd417bf11e1b9/jetified-hidely-1.0.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.devlomi.hidely/hidely/1.0.0/838ba436a89ecc882015d2b455d1ba4b2cfac80d/hidely-1.0.0-javadoc.jar!/" />

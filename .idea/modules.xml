@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FireApp_Android_App_-_V1.3.3.iml" filepath="$PROJECT_DIR$/.idea/modules/FireApp_Android_App_-_V1.3.3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FireApp_Android_App_-_V1.3.3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FireApp_Android_App_-_V1.3.3.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cameraView/FireApp_Android_App_-_V1.3.3.cameraView.iml" filepath="$PROJECT_DIR$/.idea/modules/cameraView/FireApp_Android_App_-_V1.3.3.cameraView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imageeditengine/FireApp_Android_App_-_V1.3.3.imageeditengine.iml" filepath="$PROJECT_DIR$/.idea/modules/imageeditengine/FireApp_Android_App_-_V1.3.3.imageeditengine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stories-progress-view/FireApp_Android_App_-_V1.3.3.stories-progress-view.iml" filepath="$PROJECT_DIR$/.idea/modules/stories-progress-view/FireApp_Android_App_-_V1.3.3.stories-progress-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CommuneApp.iml" filepath="$PROJECT_DIR$/.idea/modules/CommuneApp.iml" group="CommuneApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="CommuneApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cameraView/cameraView.iml" filepath="$PROJECT_DIR$/.idea/modules/cameraView/cameraView.iml" group="CommuneApp/cameraView" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imageeditengine/imageeditengine.iml" filepath="$PROJECT_DIR$/.idea/modules/imageeditengine/imageeditengine.iml" group="CommuneApp/imageeditengine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stories-progress-view/stories-progress-view.iml" filepath="$PROJECT_DIR$/.idea/modules/stories-progress-view/stories-progress-view.iml" group="CommuneApp/stories-progress-view" />
     </modules>
   </component>
 </project>

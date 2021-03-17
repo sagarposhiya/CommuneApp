@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: ca.barrenechea.header-decor:header-decor:0.2.8@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85c4c598afc20bb3170fbf4cfc985ff9/jetified-header-decor-0.2.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85c4c598afc20bb3170fbf4cfc985ff9/jetified-header-decor-0.2.8/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/85c4c598afc20bb3170fbf4cfc985ff9/jetified-header-decor-0.2.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f0975eef2185b569ba3614213e4a3a4/jetified-header-decor-0.2.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f0975eef2185b569ba3614213e4a3a4/jetified-header-decor-0.2.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1f0975eef2185b569ba3614213e4a3a4/jetified-header-decor-0.2.8/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ca.barrenechea.header-decor/header-decor/0.2.8/2293e8678954564d143ef574efa187366cc40b77/header-decor-0.2.8-javadoc.jar!/" />
