@@ -20,7 +20,7 @@ import com.devlomi.commune.utils.SharedPreferencesManager;
 
 //this is the First Activity that launched when user starts the App
 public class SplashActivity extends AppCompatActivity {
-
+//hello word
     private static final int PERMISSION_REQUEST_CODE = 451;
 
     @Override
