@@ -333,4 +333,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
+
+    // Good to test
 </manifest>
