@@ -117,5 +117,9 @@
         <item name="android:windowBackground">@color/colorBlack</item>
     </style>
 
+    <style name="tabAppTheme">
+        <item name="android:fontFamily">@font/aa_app_font_reguler</item>
+    </style>
+
 
 </resources>

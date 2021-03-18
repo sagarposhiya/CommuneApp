@@ -3,26 +3,25 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/root">
+    android:layout_height="match_parent">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        android:background="#fff">
 
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-
+            android:background="#fff"
+            ads:titleTextColor="@color/all_btn_color"
             app:popupTheme="@style/AppTheme.PopupOverlay">
-<!--app:layout_scrollFlags="scroll|snap"-->
 
             <TextView
                 android:id="@+id/tv_selected_chat"
@@ -38,12 +37,6 @@
         </androidx.appcompat.widget.Toolbar>
 
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabSelectedTextColor="@android:color/white" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
 
@@ -54,13 +47,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_main"
-        >
+        tools:showIn="@layout/activity_main">
 
 
     </androidx.viewpager.widget.ViewPager>
-
-
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -68,11 +58,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="70dp"
         android:tint="@color/colorWhite"
+        android:visibility="visible"
         app:backgroundTint="@color/colorAccent"
         app:fabSize="normal"
-        android:visibility="visible"
         app:layout_anchor="@id/view_pager"
         app:layout_anchorGravity="bottom|right|end"
         app:srcCompat="@drawable/ic_message" />
@@ -82,14 +73,36 @@
         android:id="@+id/text_status_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="7dp"
         android:tint="@color/colorWhite"
+        android:visibility="invisible"
         app:backgroundTint="@color/colorGreen"
         app:fabSize="normal"
-        android:visibility="invisible"
         app:layout_anchor="@id/view_pager"
         app:layout_anchorGravity="bottom|right|end"
         app:srcCompat="@drawable/ic_edit" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        style="@style/tabAppTheme"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff"
+        ads:tabBackground="@drawable/aa_tab_selected"
+        ads:tabIndicatorColor="@color/white"
+        ads:tabIndicatorHeight="0dp"
+        ads:tabPaddingBottom="5dp"
+        ads:tabPaddingEnd="10dp"
+        ads:tabPaddingStart="10dp"
+        ads:tabPaddingTop="5dp"
+        ads:tabTextColor="@color/colorBlack"
+        app:tabSelectedTextColor="@android:color/white" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

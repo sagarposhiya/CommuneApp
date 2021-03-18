@@ -7,9 +7,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
-import android.view.ActionMode
-import android.view.Menu
-import android.view.MenuItem
+import android.view.*
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -34,7 +32,9 @@ import com.devlomi.commune.job.DailyBackupJob
 import com.devlomi.commune.job.SaveTokenJob
 import com.devlomi.commune.job.SetLastSeenJob
 import com.devlomi.commune.model.realms.User
-import com.devlomi.commune.services.*
+import com.devlomi.commune.services.FCMRegistrationService
+import com.devlomi.commune.services.InternetConnectedListener
+import com.devlomi.commune.services.NetworkService
 import com.devlomi.commune.utils.*
 import com.devlomi.commune.utils.network.FireManager
 import com.devlomi.commune.views.dialogs.IgnoreBatteryDialog
@@ -337,6 +337,8 @@ class MainActivity : BaseActivity(), FabRotationAnimation.RotateAnimationListene
         tvSelectedChatCount = findViewById(R.id.tv_selected_chat)
         viewPager = findViewById(R.id.view_pager)
         tabLayout = findViewById(R.id.tab_layout)
+
+
         textStatusFab = findViewById(R.id.text_status_fab)
         root = findViewById(R.id.root)
 
@@ -352,6 +354,12 @@ class MainActivity : BaseActivity(), FabRotationAnimation.RotateAnimationListene
         viewPager.adapter = adapter
         viewPager.offscreenPageLimit = 1
         setTabsTitles(3)
+        for (i in 0 until tabLayout.getTabCount()) {
+            val tab: View = (tabLayout.getChildAt(0) as ViewGroup).getChildAt(i)
+            val p: ViewGroup.MarginLayoutParams = tab.getLayoutParams() as ViewGroup.MarginLayoutParams
+            p.setMargins(15, 8, 15, 8)
+            tab.requestLayout()
+        }
     }
 
 
