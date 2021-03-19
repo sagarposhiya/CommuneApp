@@ -365,6 +365,7 @@ public class ChatActivity extends BaseActivity implements GroupTyping.GroupTypin
         init();
         setBackgroundImage();
         setSupportActionBar(toolbar);
+        toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(),R.drawable.a_chat_ic_more));
 
         viewModel = new ViewModelProvider(this).get(ChatViewModel.class);
         fireManager = new FireManager();

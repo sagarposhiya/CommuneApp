@@ -68,7 +68,7 @@ class StatusFragment : BaseFragment(), StatusAdapter.OnClickListener {
     private lateinit var tvTextStatus:TextViewWithShapeBackground
     private lateinit var circularStatusView: CircularStatusView
     private lateinit var profileImage: ImageView
-    private lateinit var rowStatusContainer: ConstraintLayout
+    private lateinit var rowStatusContainer: LinearLayout
 
 
 

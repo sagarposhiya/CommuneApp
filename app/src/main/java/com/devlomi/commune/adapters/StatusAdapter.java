@@ -53,7 +53,7 @@ public class StatusAdapter extends RealmRecyclerViewAdapter<UserStatuses, Status
     @NonNull
     @Override
     public StatusHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View row = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_status, parent, false);
+        View row = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_status1, parent, false);
         return new StatusHolder(row);
     }
 

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-
+<!--    android:background="@drawable/received_message"-->
     <com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint
         android:id="@+id/container"
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
-        android:background="@drawable/received_message"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -29,7 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="test"
-                android:textColor="@color/blue"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:textColor="@color/colorBlack"
                 android:visibility="gone" />
         </FrameLayout>
 
@@ -51,7 +52,7 @@
                 android:minWidth="60dp"
                 android:paddingTop="5dp"
                 android:text="Test"
-                android:textColor="@color/received_message_title_color"
+                android:textColor="@color/colorBlack"
                 android:textColorLink="#8498fc"
                 app:emojiSize="20sp"
                 android:textDirection="anyRtl" />
@@ -74,6 +75,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:textColor="#373737"
                 android:paddingRight="4dp"
                 android:text="12:20 AM" />
 

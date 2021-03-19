@@ -10,9 +10,10 @@
         android:id="@+id/tv_day"
         android:layout_centerHorizontal="true"
         android:padding="10dp"
-        android:background="@color/header_background_color"
+        android:background="@drawable/a_chat_day_bg"
         android:text="TODAY"
-        android:textColor="@color/header_text_color"
+        android:fontFamily="@font/aa_app_font_reguler"
+        android:textColor="@color/colorBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

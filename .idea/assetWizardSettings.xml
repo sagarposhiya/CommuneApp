@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/camera_alt/baseline_camera_alt_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/arrow_back_ios/baseline_arrow_back_ios_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="fdfdfe" />
-                            <entry key="outputName" value="a_ic_camera" />
+                            <entry key="color" value="fbfcfd" />
+                            <entry key="outputName" value="a_ic_chat_back" />
                             <entry key="sourceFile" value="E:\Android-project\CommuneApp" />
                           </map>
                         </option>

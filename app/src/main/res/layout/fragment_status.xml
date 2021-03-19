@@ -26,8 +26,10 @@
         android:paddingLeft="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:text="@string/recent_updates"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        android:textColor="#000"
         android:visibility="gone" />
 
     <androidx.recyclerview.widget.RecyclerView
