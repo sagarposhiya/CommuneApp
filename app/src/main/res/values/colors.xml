@@ -55,11 +55,11 @@
 
     <!--<color name="sent_message_background_color">#71A2A9</color>-->
     <!--<color name="sent_message_background_color">#35607c</color>-->
-    <color name="sent_message_background_color">#EEFFDD</color>
-    <color name="received_message_background_color">#FFFFFF</color>
+    <color name="sent_message_background_color">#3350ED</color>
+    <color name="received_message_background_color">#E6E4E4</color>
 
-    <color name="sent_message_title_color">#1E241C</color>
-    <color name="sent_message_time_color">#97B585</color>
+    <color name="sent_message_title_color">#fff</color>
+    <color name="sent_message_time_color">#E6E4E4</color>
 
     <color name="received_message_title_color">#1E241C</color>
     <color name="received_message_time_color">#B5B9BE</color>

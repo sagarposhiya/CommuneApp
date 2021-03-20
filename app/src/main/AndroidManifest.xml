@@ -329,7 +329,4 @@
             android:label="@string/title_activity_backup_chat"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
-
-
-    // Good to test
 </manifest>
