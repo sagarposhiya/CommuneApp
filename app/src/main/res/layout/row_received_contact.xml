@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:background="@drawable/background_hd">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginTop="@dimen/margin_top_message"
         android:layout_marginBottom="@dimen/margin_bottom_message"
         android:orientation="vertical">
@@ -35,6 +34,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="4dp"
                     android:text="test"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:textColor="@color/blue"
                     android:visibility="gone" />
 
@@ -67,7 +67,8 @@
                             android:layout_marginLeft="8dp"
                             android:layout_toRightOf="@id/img_contact"
                             android:text="John Doe"
-                            android:textColor="@color/blue"
+                            android:fontFamily="@font/aa_app_font_reguler"
+                            android:textColor="@color/colorBlack"
                             android:textStyle="bold" />
 
                         <TextView
@@ -78,6 +79,8 @@
                             android:layout_below="@id/tv_contact_name"
                             android:layout_alignParentRight="true"
                             android:layout_marginTop="22dp"
+                            android:textColor="#363535"
+                            android:fontFamily="@font/aa_app_font_reguler"
                             android:layout_marginRight="8dp"
                             android:text="3:43 PM" />
 

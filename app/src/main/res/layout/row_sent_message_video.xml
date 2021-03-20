@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginStart="20dp"
+        android:layout_marginRight="1dp"
         android:layout_marginLeft="20dp"
         android:background="@drawable/a_chat_send_msg_bg"
         android:orientation="vertical"
@@ -84,6 +85,8 @@
                         android:id="@+id/tv_file_size_video_download"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:textColor="@color/white"
                         android:text="4MB" />
                 </LinearLayout>
             </LinearLayout>
@@ -106,6 +109,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_videocam_wrapped"
                     android:drawablePadding="5dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:gravity="center"
                     android:text="00:00"
                     android:textColor="@color/colorWhite"
@@ -125,6 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginRight="4dp"
                         android:text="12:20 AM"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:textColor="#efebe9"
                         android:textSize="11sp" />
 

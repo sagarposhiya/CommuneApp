@@ -109,6 +109,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             anim:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/record_button" />
@@ -131,6 +133,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/a_chat_bgmic"
             android:scaleType="centerInside"
+            android:layout_marginBottom="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:recording="@drawable/a_chat_mic"

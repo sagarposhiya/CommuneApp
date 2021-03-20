@@ -42,6 +42,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
+                    app:fontFamily="@font/aa_app_font_reguler"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:maxLines="1"
                     android:singleLine="true" />
 
@@ -55,6 +57,7 @@
                 android:layout_gravity="left"
                 android:drawablePadding="3dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/aa_app_font_reguler"
                 android:gravity="center_vertical"
                 android:maxLines="3"
                 android:textSize="14sp" />

@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/a_chat_send_msg_bg"
-        android:padding="6dp"
+        android:padding="8dp"
+        android:layout_marginRight="1dp"
         android:orientation="horizontal"
         app:linearBgTintColor="@color/sent_message_background_color">
 

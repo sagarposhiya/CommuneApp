@@ -14,7 +14,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="You Created This Group"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorBlack"
         android:textSize="10sp">
 
 

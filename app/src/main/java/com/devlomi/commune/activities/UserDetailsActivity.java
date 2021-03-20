@@ -27,6 +27,7 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.palette.graphics.Palette;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -599,6 +600,7 @@ public class UserDetailsActivity extends BaseActivity implements ParticipantsAda
                     getDisposables().add(broadcastManager.changeBroadcastName(user.getUid(), newTitle).subscribe(() -> {
                         progressDialog.dismiss();
                         toolbarLayout.setTitle(newTitle);
+                        toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(),R.drawable.a_chat_ic_more));
                         toolbar.setTitle(newTitle);
 
                     }, throwable -> {

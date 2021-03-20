@@ -22,6 +22,7 @@
             android:background="@color/bgColor"
             android:gravity="center"
             android:padding="12dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="@string/no_longer_participant"
             android:textColor="@color/colorText"
             android:textSize="17sp"
@@ -46,17 +47,19 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/media"
-                    android:textColor="@color/item_title_color_user_details" />
+                    android:fontFamily="@font/aa_app_font_median"
+                    android:textColor="#3A3A3A" />
 
                 <TextView
-                    android:textColor="@color/colorText"
                     android:id="@+id/tv_count_media"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
+                    android:fontFamily="@font/aa_app_font_median"
+                    android:textColor="#3A3A3A"
                     android:drawableRight="@drawable/ic_right_arrow_wrapped"
                     android:gravity="center"
-                    android:drawableTint="@color/iconTintColor"
+                    android:drawableTint="#3A3A3A"
                     android:text="@string/count" />
 
 
@@ -88,10 +91,11 @@
                     android:padding="12dp">
 
                     <TextView
-                        android:textColor="@color/colorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
+                        android:fontFamily="@font/aa_app_font_median"
+                        android:textColor="#3A3A3A"
                         android:text="@string/mute_notifications" />
 
                     <androidx.appcompat.widget.SwitchCompat
@@ -147,7 +151,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/about_and_phone_number"
-                    android:textColor="@color/item_title_color_user_details" />
+                    android:fontFamily="@font/aa_app_font_median"
+                    android:textColor="#3A3A3A" />
 
 
                 <TextView
@@ -156,6 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     tools:text="One Day i can Reach The Rainbow!" />
 
 
@@ -164,6 +170,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
+                    android:visibility="gone"
                     android:background="@color/colorDivider" />
 
                 <LinearLayout
@@ -176,6 +183,8 @@
                         android:id="@+id/tv_number_details"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         tools:text="+1 444 444 444" />
 
 
@@ -308,7 +317,7 @@
                 android:gravity="center"
                 android:padding="12dp"
                 android:text="@string/block_contact"
-                android:textColor="@color/item_title_color_user_details"
+                android:textColor="#000"
                 android:drawableTint="@color/iconTintColor"/>
 
         </androidx.cardview.widget.CardView>

@@ -15,8 +15,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="@dimen/margin_top_message"
+        android:layout_marginRight="1dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
-        android:background="@drawable/sent_message"
+        android:background="@drawable/a_chat_send_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/sent_message_background_color">
 
@@ -41,14 +42,14 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="4dp"
-                    android:background="@drawable/rounded_corner_green">
+                    android:background="@drawable/rounded_corner_green1">
 
                     <ak.sh.ay.musicwave.MusicWave
                         android:id="@+id/wave_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:colorGradient="false"
-                        app:waveColor="@color/colorWhite"
+                        app:waveColor="@color/all_btn_color"
                         app:waveThickness="1" />
 
                     <ImageView
@@ -56,7 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:tint="#ffff"
+                        android:tint="@color/all_btn_color"
                         app:srcCompat="@drawable/ic_headset" />
 
 
@@ -65,9 +66,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center"
-                        android:layout_marginBottom="4dp"
+                        android:layout_marginBottom="3dp"
                         android:text="0:00"
-                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:textColor="@color/colorBlack"
                         android:textSize="8sp" />
                 </FrameLayout>
 
@@ -90,9 +92,9 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="6dp"
                     android:layout_toRightOf="@id/frame_layout_audio_info"
-                    android:background="@drawable/btn_play_bg"
+                    android:background="@drawable/btn_play_bg1"
                     android:padding="6dp"
-                    android:tint="#fff"
+                    android:tint="#000"
                     app:srcCompat="@drawable/ic_play_arrow" />
 
 
@@ -114,7 +116,8 @@
                     android:layout_below="@id/voice_seekbar"
                     android:layout_alignLeft="@id/voice_seekbar"
                     android:text="4.0MB"
-                    android:textColor="@color/sent_color_state"
+                    android:fontFamily="@font/aa_app_font_reguler"
+                    android:textColor="@color/white"
                     android:textSize="10sp" />
 
 
@@ -123,9 +126,11 @@
                     style="@style/SentMessageTimeTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:layout_below="@id/voice_seekbar"
                     android:layout_alignRight="@id/voice_seekbar"
                     android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
                     android:text="12:20 AM"
                     android:textSize="11sp" />
 

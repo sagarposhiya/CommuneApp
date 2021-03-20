@@ -14,7 +14,8 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:background="@drawable/received_message"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -26,7 +27,8 @@
             android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
             android:text="test"
-            android:textColor="@color/blue"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textColor="#000"
             android:visibility="gone" />
 
         <include layout="@layout/item_reply" />
@@ -56,8 +58,9 @@
                 android:layout_toRightOf="@id/file_icon"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:fontFamily="@font/aa_app_font_reguler"
                 android:paddingRight="4dp"
-                android:textColor="@color/blue"
+                android:textColor="#000"
                 android:textStyle="bold"
                 tools:text="File_20323232-15951.APK" />
 
@@ -83,7 +86,8 @@
                 android:layout_below="@id/tv_file_name"
                 android:layout_toRightOf="@id/file_icon"
                 android:text="2.3 MB"
-                android:textColor="@color/text_color_grey"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:textColor="#4E4C4C"
                 android:textSize="12sp" />
 
             <TextView
@@ -92,8 +96,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_file_name"
                 android:layout_marginLeft="6dp"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:textColor="#4E4C4C"
                 android:layout_toRightOf="@id/tv_file_size"
-                android:textColor="@color/text_color_grey"
                 android:textSize="12sp"
                 tools:text="JPG" />
 
@@ -105,8 +110,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_file_extension"
                 android:layout_alignParentRight="true"
+                android:fontFamily="@font/aa_app_font_reguler"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="2dp"
+                android:textColor="#4E4C4C"
                 android:text="10:07 PM "
 
                 />

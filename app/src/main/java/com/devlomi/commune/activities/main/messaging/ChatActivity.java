@@ -1749,8 +1749,10 @@ public class ChatActivity extends BaseActivity implements GroupTyping.GroupTypin
 
     private void pickContact() {
         new MultiContactPicker.Builder(ChatActivity.this)
-                .handleColor(ContextCompat.getColor(ChatActivity.this, R.color.colorPrimary))
-                .bubbleColor(ContextCompat.getColor(ChatActivity.this, R.color.colorPrimary))
+                .handleColor(ContextCompat.getColor(ChatActivity.this, R.color.white))
+                .bubbleColor(ContextCompat.getColor(ChatActivity.this, R.color.white))
+                .searchIconColor(ContextCompat.getColor(ChatActivity.this, R.color.colorBlack))
+                .bubbleTextColor(ContextCompat.getColor(ChatActivity.this, R.color.colorBlack))
                 .showPickerForResult(PICK_CONTACT_REQUEST);
     }
 
@@ -2501,6 +2503,7 @@ public class ChatActivity extends BaseActivity implements GroupTyping.GroupTypin
         if (!isInActionMode) {
             toolbar.getMenu().clear();
             toolbar.inflateMenu(R.menu.menu_action_chat);
+            toolbar.setTitleTextColor(Color.BLACK);
             hideOrShowUserInfo(true);
         }
 

@@ -16,8 +16,9 @@
         android:layout_marginTop="@dimen/margin_top_message"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
-        android:background="@drawable/received_message"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -29,6 +30,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="test"
             android:textColor="@color/blue"
             android:visibility="gone" />
@@ -74,6 +76,7 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/rounded_bg"
                         android:paddingLeft="4dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:paddingTop="2dp"
                         android:paddingRight="4dp"
                         android:paddingBottom="2dp"
@@ -92,6 +95,7 @@
                     android:layout_gravity="bottom|right"
                     android:layout_marginTop="2dp"
                     android:layout_marginBottom="1dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:background="@drawable/bg_tv"
                     android:gravity="right"
                     android:paddingLeft="10dp"

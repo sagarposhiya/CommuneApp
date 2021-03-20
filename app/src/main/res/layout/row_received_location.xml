@@ -11,10 +11,10 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/container"
-        android:layout_marginLeft="10dp"
         android:layout_width="330dp"
         android:layout_height="200dp"
         android:layout_gravity="left"
+        android:layout_marginLeft="1dp"
         app:cardBackgroundColor="@color/received_message_background_color"
         app:cardCornerRadius="8dp">
 
@@ -32,6 +32,7 @@
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
+                android:fontFamily="@font/aa_app_font_reguler"
                 android:text="test"
                 android:textColor="@color/blue"
                 android:visibility="gone" />
@@ -45,6 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_below="@id/title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:padding="4dp"
                 map:liteMode="true" />
@@ -66,9 +69,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:ellipsize="end"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:maxWidth="180dp"
                         android:maxLines="1"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/colorBlack"
                         android:textStyle="bold"
                         tools:text="Alphabet" />
 
@@ -80,9 +84,10 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginBottom="4dp"
                         android:ellipsize="end"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:maxWidth="220dp"
                         android:maxLines="1"
-                        android:textColor="@color/text_color_grey"
+                        android:textColor="#444343"
                         android:textSize="12sp"
                         tools:text="Silicon Valley" />
                 </LinearLayout>
@@ -97,7 +102,9 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="4dp"
-                    android:text="12:30" />
+                    android:fontFamily="@font/aa_app_font_reguler"
+                    android:text="12:30"
+                    android:textColor="#3D3C3C" />
 
 
             </FrameLayout>

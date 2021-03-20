@@ -9,7 +9,7 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="1dp"
         android:layout_width="330dp"
         android:id="@+id/container"
         android:layout_height="200dp"
@@ -54,8 +54,9 @@
                         android:ellipsize="end"
                         android:maxWidth="180dp"
                         android:maxLines="1"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="McDonalds"
-                        android:textColor="@color/sent_color_state"
+                        android:textColor="@color/white"
                         android:textStyle="bold" />
 
 
@@ -67,9 +68,10 @@
                         android:layout_marginBottom="4dp"
                         android:ellipsize="end"
                         android:maxWidth="220dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:maxLines="1"
                         android:text="2nd District"
-                        android:textColor="@color/grey"
+                        android:textColor="#D7D7D7"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -89,6 +91,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="6dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="12:30" />
 
                     <ImageView

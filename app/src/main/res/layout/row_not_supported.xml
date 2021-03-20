@@ -12,8 +12,9 @@
         android:layout_gravity="left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/received_message"
-        android:padding="6dp"
+        android:background="@drawable/a_chat_recive_msg_bg"
+        android:padding="8dp"
+        android:layout_marginLeft="1dp"
         android:orientation="horizontal"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -24,8 +25,9 @@
             android:drawableLeft="@drawable/ic_update_wrapped"
             android:drawablePadding="4dp"
             android:gravity="center"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="@string/unsupported_type"
-            android:textColor="@color/grey"
+            android:textColor="#959494"
             android:textSize="12sp"
             android:textStyle="italic" />
 
@@ -36,6 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
+            android:textColor="#959494"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="05:08" />
     </com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint>
 </FrameLayout>

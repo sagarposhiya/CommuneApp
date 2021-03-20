@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:background="@drawable/background_hd">
+    android:orientation="vertical">
 
 
     <com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint
@@ -16,8 +15,9 @@
         android:layout_marginTop="@dimen/margin_top_message"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginLeft="1dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
-        android:background="@drawable/received_message"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -84,11 +84,12 @@
                     android:id="@+id/tv_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:layout_below="@id/voice_seekbar"
                     android:layout_alignLeft="@id/voice_seekbar"
                     android:layout_marginTop="2dp"
                     android:text="00:00"
-                    android:textColor="@color/blue"
+                    android:textColor="#333333"
                     android:textSize="12sp" />
 
 
@@ -97,10 +98,12 @@
                     style="@style/ReceivedMessageTimeTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:layout_below="@id/voice_seekbar"
                     android:layout_alignRight="@id/voice_seekbar"
                     android:layout_marginTop="2dp"
                     android:layout_marginRight="10dp"
+                    android:textColor="#333333"
                     android:text="12:20 AM" />
 
                 <FrameLayout

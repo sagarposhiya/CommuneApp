@@ -119,7 +119,7 @@
     <string name="contact">Contact</string>
     <string name="media">Media</string>
     <string name="count">Count</string>
-    <string name="about_and_phone_number">About and phone number</string>
+    <string name="about_and_phone_number">About &amp; phone number</string>
     <string name="delete">Delete</string>
     <string name="copy">Copy</string>
     <string name="forward">Forward</string>

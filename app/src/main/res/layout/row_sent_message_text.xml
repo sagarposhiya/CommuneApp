@@ -14,7 +14,7 @@
         android:layout_gravity="end"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-
+android:layout_marginRight="1dp"
         android:layout_marginTop="@dimen/margin_top_message"
         android:layout_marginBottom="@dimen/margin_bottom_message"
         android:background="@drawable/a_chat_send_msg_bg"
@@ -39,6 +39,7 @@
                 android:minWidth="60dp"
                 android:paddingTop="5dp"
                 android:text="Test"
+                app:fontFamily="@font/aa_app_font_reguler"
                 android:textColor="@color/white"
                 app:emojiSize="20sp"
                 android:textColorLink="#8498fc"

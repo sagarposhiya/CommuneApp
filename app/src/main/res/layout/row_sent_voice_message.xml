@@ -15,6 +15,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="@dimen/margin_top_message"
+        android:layout_marginRight="1dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
         android:background="@drawable/a_chat_send_msg_bg"
         android:orientation="vertical"
@@ -77,9 +78,9 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="4dp"
                     android:layout_toRightOf="@id/profile_image_container"
-                    android:background="@drawable/btn_play_bg"
+                    android:background="@drawable/btn_play_bg1"
                     android:padding="6dp"
-                    android:tint="@color/colorWhite"
+                    android:tint="@color/colorBlack"
                     android:visibility="visible"
                     app:srcCompat="@drawable/ic_play_arrow" />
 

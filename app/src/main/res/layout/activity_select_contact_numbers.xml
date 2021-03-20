@@ -16,7 +16,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_send_contact_select"
-        android:background="@color/colorPrimary"
+        android:background="@color/white"
         app:srcCompat="@drawable/ic_send"
         android:layout_gravity="bottom|right"
         app:fabSize="normal"

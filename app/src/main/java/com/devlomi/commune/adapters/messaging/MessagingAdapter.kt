@@ -261,6 +261,7 @@ class MessagingAdapter(private val messages: OrderedRealmCollection<Message>, au
             MessageType.RECEIVED_IMAGE -> return ReceivedImageHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_received_message_img, parent, false))
             MessageType.SENT_VOICE_MESSAGE -> return SentVoiceMessageHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_sent_voice_message, parent, false), myThumbImg)
             MessageType.RECEIVED_VOICE_MESSAGE -> return ReceivedVoiceMessageHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_received_message_voice, parent, false))
+
             MessageType.RECEIVED_VIDEO -> return ReceivedVideoMessageHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_received_message_video, parent, false))
             MessageType.SENT_VIDEO -> return SentVideoMessageHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_sent_message_video, parent, false))
             MessageType.SENT_FILE -> return SentFileHolder(context, LayoutInflater.from(parent.context).inflate(R.layout.row_sent_file, parent, false))

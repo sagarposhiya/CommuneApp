@@ -17,7 +17,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="@dimen/margin_bottom_message"
-        android:background="@drawable/received_message"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -27,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="test"
-            android:textColor="@color/blue"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textColor="@color/colorBlack"
             android:visibility="gone" />
 
         <include layout="@layout/item_reply" />
@@ -82,8 +84,9 @@
                 android:layout_below="@id/voice_seekbar"
                 android:layout_alignLeft="@id/voice_seekbar"
                 android:layout_marginTop="2dp"
-                android:textColor="@color/blue"
+                android:textColor="#555555"
                 android:textSize="12sp"
+                android:fontFamily="@font/aa_app_font_reguler"
                 tools:text="4.0MB" />
 
             <TextView
@@ -91,6 +94,8 @@
                 style="@style/ReceivedMessageTimeTextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:textColor="#555555"
                 android:layout_below="@id/voice_seekbar"
                 android:layout_alignRight="@id/voice_seekbar"
                 android:layout_marginTop="2dp"
@@ -130,8 +135,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="3dp"
                     android:text="0:00"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:textColor="@color/colorWhite"
                     android:textSize="8sp" />
 

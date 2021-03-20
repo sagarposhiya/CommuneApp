@@ -16,7 +16,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="@dimen/margin_top_message"
-        android:background="@drawable/received_message"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/a_chat_recive_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/received_message_background_color">
 
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="test"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:textColor="@color/blue"
             android:visibility="gone" />
 
@@ -72,6 +74,7 @@
                     android:layout_below="@id/progress_button"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:background="@drawable/rounded_bg"
                     android:paddingLeft="4dp"
                     android:paddingTop="2dp"
@@ -98,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_videocam_wrapped"
                     android:drawablePadding="5dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:gravity="center"
                     android:paddingRight="5dp"
                     android:text="00:00"
@@ -110,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:paddingRight="5dp"
                     android:text="12:20 AM"
                     android:textColor="@color/colorWhite"

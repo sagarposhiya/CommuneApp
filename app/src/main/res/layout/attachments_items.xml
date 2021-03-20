@@ -8,13 +8,14 @@
     >
 
     <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="@color/bgColor"
+        app:cardBackgroundColor="#F5F4F4"
         android:visibility="invisible"
         android:id="@+id/card_view_attachments"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+
         app:cardCornerRadius="12dp">
 
         <LinearLayout
@@ -43,13 +44,14 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/attach_file" />
+                        android:src="@drawable/a_attach_file" />
 
                     <TextView
                         android:textColor="@color/colorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="@string/file" />
                 </LinearLayout>
 
@@ -65,13 +67,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:src="@drawable/attach_camera" />
+                        android:src="@drawable/a_attach_camera" />
 
                     <TextView
                         android:textColor="@color/colorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="@string/camera" />
                 </LinearLayout>
 
@@ -86,7 +89,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/attach_gallery" />
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:src="@drawable/a_attach_gallery" />
 
                     <TextView
                         android:textColor="@color/colorText"
@@ -116,13 +120,15 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/attach_audio" />
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:src="@drawable/a_attach_audio" />
 
                     <TextView
                         android:textColor="@color/colorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="@string/audio" />
                 </LinearLayout>
 
@@ -137,13 +143,15 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/attach_location" />
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:src="@drawable/a_attach_location" />
 
                     <TextView
                         android:textColor="@color/colorText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="@string/location" />
                 </LinearLayout>
 
@@ -158,7 +166,8 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/attach_contact" />
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:src="@drawable/a_attach_contact" />
 
                     <TextView
                         android:textColor="@color/colorText"

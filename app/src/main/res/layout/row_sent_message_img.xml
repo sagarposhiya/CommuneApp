@@ -14,6 +14,7 @@
         android:layout_gravity="end"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="1dp"
         android:background="@drawable/a_chat_send_msg_bg"
         android:orientation="vertical"
         app:linearBgTintColor="@color/sent_message_background_color">
