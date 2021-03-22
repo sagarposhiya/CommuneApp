@@ -25,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:tint="@color/colorBlack"
             app:srcCompat="@drawable/ic_arrow_up" />
 
         <TextView
@@ -37,13 +38,16 @@
             android:layout_marginBottom="60dp"
             app:drawableLeftCompat="@drawable/ic_remove_red_eye"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textColor="@color/colorBlack"
             tools:text="8 Users" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_seen_by"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
             android:background="@color/white" />
     </LinearLayout>
 

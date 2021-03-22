@@ -94,7 +94,6 @@ public class UserDetailsActivity extends BaseActivity implements ParticipantsAda
     private CardView aboutAndPhoneNumber;
     private CardView groupParticipants;
     private RecyclerView rvParticipants;
-    private CardView cardViewBlock;
     private CardView cardViewExitGroup;
     private TextView tvExitGroup;
     private LinearLayout addParticipantAdmin;
@@ -271,7 +270,7 @@ public class UserDetailsActivity extends BaseActivity implements ParticipantsAda
         });
 
 
-        cardViewBlock.setOnClickListener(new View.OnClickListener() {
+        tvBlock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setUserBlocked();
@@ -461,7 +460,7 @@ public class UserDetailsActivity extends BaseActivity implements ParticipantsAda
 
 
     private void showParticipantsLayout() {
-        cardViewBlock.setVisibility(View.GONE);
+        tvBlock.setVisibility(View.GONE);
         cardViewExitGroup.setVisibility(View.VISIBLE);
         aboutAndPhoneNumber.setVisibility(View.GONE);
         groupParticipants.setVisibility(View.VISIBLE);
@@ -525,7 +524,6 @@ public class UserDetailsActivity extends BaseActivity implements ParticipantsAda
         switchMute = findViewById(R.id.switch_mute);
         tvStatusDetails = findViewById(R.id.tv_status_details);
         tvNumberDetails = findViewById(R.id.tv_number_details);
-        cardViewBlock = findViewById(R.id.card_view_block);
         tvBlock = findViewById(R.id.tv_block);
         aboutAndPhoneNumber = findViewById(R.id.about_and_phone_number);
         groupParticipants = findViewById(R.id.group_participants);

@@ -4,7 +4,7 @@
     <item
         android:visible="false"
         android:id="@+id/edit_profile_item"
-        android:icon="@drawable/ic_edit_white"
+        android:icon="@drawable/a_ic_edit"
         android:title="@string/edit"
         app:showAsAction="always" />
 </menu>

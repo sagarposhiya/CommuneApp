@@ -39,19 +39,20 @@
 
             <include layout="@layout/item_reply" />
 
-
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="4dp">
             <com.google.android.gms.maps.MapView xmlns:map="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/map_view"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_below="@id/title"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:padding="4dp"
                 map:liteMode="true" />
-
+</androidx.cardview.widget.CardView>
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

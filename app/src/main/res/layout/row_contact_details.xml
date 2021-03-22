@@ -4,7 +4,9 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="@color/cardBgColor">
+    app:cardBackgroundColor="@color/cardBgColor"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="4dp">
 
 
         <TextView
@@ -16,7 +18,9 @@
             android:textColor="@color/colorText"
             android:drawableTint="@color/iconTintColor"
             android:drawablePadding="20dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:padding="20dp"
+            android:textSize="16dp"
             tools:text="954154815484" />
 
 </androidx.cardview.widget.CardView>

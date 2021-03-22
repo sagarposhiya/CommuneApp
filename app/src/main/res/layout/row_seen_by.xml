@@ -15,7 +15,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/user_img_wrapped" />
-
     <TextView
         android:id="@+id/tv_username"
         android:layout_width="0dp"

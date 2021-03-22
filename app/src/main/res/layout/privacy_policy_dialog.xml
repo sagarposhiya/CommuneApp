@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
@@ -9,19 +10,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="3dp">
+
         <TextView
             android:id="@+id/tv_privacy_policy_dialog"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textSize="14dp"
+            android:text="kknl;m;m;"
+            android:textColor="#292929"
             android:padding="8dp" />
 
 
         <CheckBox
             android:text="I Agree"
             android:id="@+id/chb_agree"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

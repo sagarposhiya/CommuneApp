@@ -10,6 +10,7 @@
         android:id="@+id/chb_delete_from_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:text="@string/delete_media_from_phone" />
 
 

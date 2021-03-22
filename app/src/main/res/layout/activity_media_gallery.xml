@@ -15,7 +15,7 @@
             android:id="@+id/toolbar_gallery"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/white"
             app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
 
 
@@ -24,7 +24,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/aa_app_font_median"
+                android:textColor="@color/colorBlack"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:visibility="gone" />
@@ -39,6 +40,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bgColor"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 

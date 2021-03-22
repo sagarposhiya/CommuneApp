@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -110,6 +111,9 @@ public class NewChatActivity extends BaseActivity implements UsersAdapter.OnItem
     private void init() {
         rvNewChat = findViewById(R.id.rv_new_chat);
         toolbar = findViewById(R.id.toolbar);
+        toolbar.setOverflowIcon(ContextCompat.getDrawable(getApplicationContext(),R.drawable.a_chat_ic_more));
+
+
         progressBar = findViewById(R.id.progress_bar_sync);
         adView = findViewById(R.id.ad_view);
         refreshContactsBtn = findViewById(R.id.refresh_contacts_btn);

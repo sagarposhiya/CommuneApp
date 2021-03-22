@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,6 +15,7 @@
         android:background="#e1e1e1"
         android:gravity="center"
         android:padding="8dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:text="@string/you_cant_send_messages_to_group"
         android:textColor="#565656"
         android:visibility="visible" />

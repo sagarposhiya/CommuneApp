@@ -5,13 +5,13 @@
 
     <item
         android:id="@+id/forward_item"
-        android:icon="@drawable/ic_forward"
+        android:icon="@drawable/a_chat_forword"
         android:title="@string/forward"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/delete_item"
-        android:icon="@drawable/delete_ic"
+        android:icon="@drawable/a_chat_delete"
         android:title="@string/delete"
         app:showAsAction="never" />
 
@@ -19,7 +19,7 @@
 
     <item
         android:id="@+id/menu_item_share"
-        android:icon="@drawable/ic_share"
+        android:icon="@drawable/a_chat_shar"
         android:title="@string/share"
         app:showAsAction="always" />
 </menu>

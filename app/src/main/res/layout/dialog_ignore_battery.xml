@@ -1,16 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="3dp">
+
 
     <TextView
-        android:textSize="18sp"
         android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:padding="12dp"
+        android:textColor="#222121"
+        android:textSize="15sp"
+
         tools:text="Test" />
 
     <androidx.appcompat.widget.AppCompatCheckBox
@@ -19,8 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="4dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:padding="4dp"
         android:text="@string/do_not_show_again" />
-
-
 </LinearLayout>

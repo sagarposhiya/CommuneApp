@@ -6,9 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_top_message"
     android:layout_marginBottom="@dimen/margin_bottom_message"
-    android:orientation="vertical"
-    tools:background="@drawable/background_hd">
-
+    android:orientation="vertical">
     <com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint
         android:id="@+id/container"
         android:layout_width="280dp"

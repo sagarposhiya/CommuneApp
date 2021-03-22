@@ -11,12 +11,17 @@
         android:id="@+id/img_user"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_gravity="center"
         app:srcCompat="@drawable/user_img_wrapped" />
 
     <TextView
         android:layout_gravity="center"
         android:text="UserName"
         android:id="@+id/tv_username"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/aa_app_font_reguler"
+        android:textColor="@color/colorBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

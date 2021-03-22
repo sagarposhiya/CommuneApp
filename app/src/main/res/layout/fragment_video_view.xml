@@ -43,12 +43,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:textColor="#ffffff" />
 
         <SeekBar
             android:id="@+id/seekbar_video"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:progressTint="@color/colorAccent"
+            android:thumbTint="@color/colorAccent"
+            android:progressBackgroundTint="#9D9B9B"
             android:layout_weight="1" />
 
         <TextView
@@ -56,6 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:textColor="#ffffff" />
 
 

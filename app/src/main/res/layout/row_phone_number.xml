@@ -19,11 +19,12 @@
             android:layout_height="wrap_content"
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
             android:checked="true"
-            android:drawableLeft="@drawable/ic_phone_wrapped"
-            android:drawableTint="@color/iconTintColor"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:drawableLeft="@drawable/aa_ic_phone_white"
             android:drawablePadding="20dp"
             android:gravity="center"
             android:padding="15dp"
+            android:textSize="17dp"
             tools:text="Test" />
 
         <View

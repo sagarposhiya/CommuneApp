@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -60,8 +61,8 @@ public class NewCallAdapter extends RealmRecyclerViewAdapter<User, NewCallAdapte
     class UserHolder extends RecyclerView.ViewHolder {
         private CircleImageView profileImage;
         private TextView tvUsername;
-        private ImageButton btnCall;
-        private ImageButton btnVideoCall;
+        private ImageView btnCall;
+        private ImageView btnVideoCall;
 
 
         public UserHolder(View itemView) {

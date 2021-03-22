@@ -2,11 +2,13 @@ package com.devlomi.commune.activities
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.Toolbar
 import com.bumptech.glide.Glide
@@ -30,12 +32,14 @@ class ProfilePhotoActivity : BaseActivity() {
     private var isGroup = false
     private var isBroadcast = false
     private val groupManager = GroupManager()
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_photo)
         toolbarProfile = findViewById(R.id.toolbar_profile)
         profileFullScreen = findViewById(R.id.profile_full_screen)
         setSupportActionBar(toolbarProfile)
+//        toolbarProfile.setTitleTextColor(getColor(R.color.colorBlack))
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         //if user viewing other user's photo

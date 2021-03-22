@@ -14,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.lifecycle.ViewModelProvider
@@ -334,7 +335,8 @@ class MainActivity : BaseActivity(), FabRotationAnimation.RotateAnimationListene
     private fun init() {
         fab = findViewById(R.id.open_new_chat_fab)
         toolbar = findViewById(R.id.toolbar)
-        tvSelectedChatCount = findViewById(R.id.tv_selected_chat)
+        toolbar.overflowIcon = ContextCompat.getDrawable(applicationContext,R.drawable.a_chat_ic_more);
+
         viewPager = findViewById(R.id.view_pager)
         tabLayout = findViewById(R.id.tab_layout)
 

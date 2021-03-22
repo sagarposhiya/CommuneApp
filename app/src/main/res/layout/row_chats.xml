@@ -13,19 +13,21 @@
         android:id="@+id/container_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
         android:background="?attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginTop="5dp"
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_photo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_centerVertical="true"
+            android:layout_margin="2dp"
             android:src="@drawable/user_img_wrapped"
             app:civ_border_color="#bdbdbd"
             app:civ_border_width="1dp" />
@@ -34,8 +36,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_toRightOf="@id/user_photo"
             android:orientation="vertical">
@@ -56,8 +58,8 @@
                     android:layout_toEndOf="@+id/user_photo"
                     android:layout_toRightOf="@id/user_photo"
                     android:layout_weight="1"
-                    android:fontFamily="@font/aa_app_font_median"
                     android:ellipsize="end"
+                    android:fontFamily="@font/aa_app_font_median"
                     android:gravity="center_vertical|left"
                     android:maxLines="1"
                     android:text="John Doe"
@@ -70,8 +72,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="4:52 PM"
                     android:fontFamily="@font/aa_app_font_reguler"
+                    android:text="4:52 PM"
                     android:textColor="@color/colorTextDesc"
                     android:textSize="9sp" />
 
@@ -85,9 +87,10 @@
 
                 <ImageView
                     android:id="@+id/img_read_tag_chats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_margin="1dp"
                     android:visibility="invisible"
                     app:srcCompat="@drawable/ic_check"
                     tools:tint="#000000" />
@@ -99,6 +102,7 @@
                     android:layout_below="@id/tv_name"
                     android:layout_alignStart="@id/tv_name"
                     android:layout_alignLeft="@id/tv_name"
+                    android:layout_marginLeft="2dp"
                     android:layout_marginTop="4dp"
                     android:layout_weight="1"
                     android:ellipsize="end"
@@ -121,9 +125,9 @@
                     android:layout_marginTop="4dp"
                     android:layout_weight="1"
                     android:ellipsize="end"
-                    android:maxLines="1"
                     android:fontFamily="@font/aa_app_font_reguler"
-                    android:textColor="@color/typing_color"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
                     android:textDirection="ltr"
                     android:visibility="gone"
                     tools:text="OK Bro" />
@@ -140,11 +144,11 @@
                         android:id="@+id/count_unread_badge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:gravity="center"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
                         android:paddingRight="10dp"
-                        android:fontFamily="@font/aa_app_font_reguler"
                         android:paddingBottom="5dp"
                         android:text="1"
                         android:textColor="@color/colorTextLight"

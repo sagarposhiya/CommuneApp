@@ -98,7 +98,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/typing_layout_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:background="@color/bgColor"
         anim:layout_constraintBottom_toBottomOf="parent"
         anim:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,7 @@
         <include
             layout="@layout/typing_layout"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             anim:layout_constraintTop_toTopOf="parent"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="3dp"
@@ -129,11 +129,13 @@
 
         <com.devlomi.commune.views.AnimButton
             android:id="@+id/record_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:background="@drawable/a_chat_bgmic"
             android:scaleType="centerInside"
             android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:recording="@drawable/a_chat_mic"

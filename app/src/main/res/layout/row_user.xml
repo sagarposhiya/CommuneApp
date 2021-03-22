@@ -33,6 +33,7 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:text="John Doe"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +49,7 @@
         android:layout_alignLeft="@id/tv_name"
         android:layout_marginTop="8dp"
         android:ellipsize="end"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:maxLines="1"
         tools:text="Trust in Yourself!"
         android:textColor="@color/colorTextDesc"
@@ -61,6 +63,7 @@
         android:layout_height="1.5dp"
         android:layout_marginTop="6dp"
         android:background="@color/colorDivider"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/tv_status" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,76 +8,88 @@
     android:layout_margin="4dp"
     tools:showIn="@layout/row_sent_message_text">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:minWidth="120dp"
-        android:minHeight="48dp"
-        android:orientation="horizontal">
+        app:cardBackgroundColor="@color/quoted_sent_background_color"
+        app:cardCornerRadius="10dp">
 
-        <View
-            android:id="@+id/quoted_color"
-            android:layout_width="3dp"
-            android:layout_height="match_parent" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingLeft="8dp"
-            android:paddingTop="4dp"
-            android:paddingRight="8dp"
-            android:paddingBottom="4dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:minWidth="120dp"
+                android:minHeight="48dp"
                 android:orientation="horizontal">
 
-                <com.vanniktech.emoji.EmojiTextView
-                    android:id="@+id/tv_quoted_name"
-                    android:layout_width="wrap_content"
+                <View
+                    android:id="@+id/quoted_color"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    app:fontFamily="@font/aa_app_font_reguler"
-                    android:fontFamily="@font/aa_app_font_reguler"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal">
+
+                        <com.vanniktech.emoji.EmojiTextView
+                            android:id="@+id/tv_quoted_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/aa_app_font_reguler"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            app:fontFamily="@font/aa_app_font_reguler" />
 
 
+                    </LinearLayout>
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/tv_quoted_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:drawablePadding="3dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/aa_app_font_reguler"
+                        android:gravity="center_vertical"
+                        android:maxLines="3"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/quoted_thumb"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
             </LinearLayout>
 
-            <com.vanniktech.emoji.EmojiTextView
-                android:id="@+id/tv_quoted_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:drawablePadding="3dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/aa_app_font_reguler"
-                android:gravity="center_vertical"
-                android:maxLines="3"
-                android:textSize="14sp" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/quoted_thumb"
-            android:layout_width="52dp"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:visibility="gone" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/btn_cancel_image"
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_gravity="top|right|center"
-        android:layout_marginTop="3dp"
-        android:layout_marginRight="3dp"
-        android:visibility="gone"
-        app:srcCompat="@drawable/ic_clear" />
+            <ImageView
+                android:id="@+id/btn_cancel_image"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="top|right|center"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_clear" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
 </FrameLayout>

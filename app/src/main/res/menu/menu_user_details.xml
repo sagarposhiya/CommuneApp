@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/edit_group"
-        android:icon="@drawable/ic_edit_white"
+        android:icon="@drawable/a_ic_edit"
         android:title="@string/add_participants"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/add_participants"
-        android:icon="@drawable/ic_person_add"
+        android:icon="@drawable/a_ic_person_add"
         android:title="@string/add_participants"
         app:showAsAction="always" />
 

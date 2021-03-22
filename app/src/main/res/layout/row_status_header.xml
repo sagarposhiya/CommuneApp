@@ -6,8 +6,9 @@
     android:paddingLeft="16dp"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
+    android:fontFamily="@font/aa_app_font_median"
     android:text="@string/viewed_statuses"
-    android:textColor="@color/status_header_text_color"
-    android:textSize="10sp" />
+    android:textColor="@color/colorBlack"
+    android:textSize="14sp" />
 
 

@@ -43,8 +43,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/voice_circle_img"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
                         android:src="@drawable/user_img_wrapped"
                         app:civ_border_color="@color/colorWhite"
                         app:civ_border_width="1dp" />

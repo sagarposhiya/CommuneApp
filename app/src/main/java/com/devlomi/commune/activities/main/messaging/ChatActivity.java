@@ -900,7 +900,7 @@ public class ChatActivity extends BaseActivity implements GroupTyping.GroupTypin
     }
 
     private void setQuotedMessageStyle() {
-        quotedMessageFrame.setBackgroundColor(ContextCompat.getColor(this, R.color.quoted_sent_background_color));
+//p        quotedMessageFrame.setBackgroundColor(ContextCompat.getColor(this, R.color.quoted_sent_background_color));
         tvQuotedName.setTextColor(ContextCompat.getColor(this, R.color.quoted_sent_text_color));
         quotedColor.setBackgroundColor(ContextCompat.getColor(this, R.color.quoted_sent_quoted_color));
         btnCancelImage.setColorFilter(ContextCompat.getColor(this, R.color.quoted_cancel_color), PorterDuff.Mode.SRC_IN);

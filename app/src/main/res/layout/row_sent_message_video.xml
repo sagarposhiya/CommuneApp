@@ -23,130 +23,139 @@
 
         <include layout="@layout/item_reply" />
 
+<androidx.cardview.widget.CardView
+    android:layout_width="246dp"
+    android:layout_height="246dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="246dp"
+        android:layout_height="246dp">
+
+        <ImageView
+            android:id="@+id/thumb_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@android:color/black" />
+
 
         <RelativeLayout
-            android:layout_width="@dimen/img_width"
-            android:layout_height="@dimen/img_height">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
 
-            <ImageView
-                android:id="@+id/thumb_img"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@android:color/black" />
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true">
-
-                <ImageButton
-                    android:id="@+id/btn_play_video"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/btn_play_bg"
-                    android:padding="14dp"
-                    app:srcCompat="@drawable/ic_play_arrow" />
-
-
-                <com.github.abdularis.buttonprogress.DownloadButtonProgress
-                    android:id="@+id/progress_button"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_alignParentBottom="true"
-                    android:visibility="gone" />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:id="@+id/linear_layout_video_download"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:visibility="gone">
-
-                <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_bg"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_file_upload" />
-
-                    <TextView
-                        android:id="@+id/tv_file_size_video_download"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/aa_app_font_reguler"
-                        android:textColor="@color/white"
-                        android:text="4MB" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageButton
+                android:id="@+id/btn_play_video"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_play_bg1"
+                android:padding="14dp"
+                android:tint="@color/colorBlack"
+                app:srcCompat="@drawable/ic_play_arrow" />
+
+
+            <com.github.abdularis.buttonprogress.DownloadButtonProgress
+                android:id="@+id/progress_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/bg_tv"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:id="@+id/tv_media_duration"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_videocam_wrapped"
-                    android:drawablePadding="5dp"
-                    android:fontFamily="@font/aa_app_font_reguler"
-                    android:gravity="center"
-                    android:text="00:00"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="11sp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_time"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:text="12:20 AM"
-                        android:fontFamily="@font/aa_app_font_reguler"
-                        android:textColor="#efebe9"
-                        android:textSize="11sp" />
-
-                    <ImageView
-
-                        android:id="@+id/message_stat_img"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-
-                        android:layout_marginRight="5dp"
-                        app:srcCompat="@drawable/ic_check" />
-                </LinearLayout>
-
-
-            </LinearLayout>
+                android:visibility="gone" />
 
         </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_video_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_file_upload" />
+
+                <TextView
+                    android:id="@+id/tv_file_size_video_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aa_app_font_reguler"
+                    android:textColor="@color/white"
+                    android:text="4MB" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/bg_tv"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_media_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_videocam_wrapped"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:gravity="center"
+                android:text="00:00"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="12:20 AM"
+                    android:fontFamily="@font/aa_app_font_reguler"
+                    android:textColor="#efebe9"
+                    android:textSize="11sp" />
+
+                <ImageView
+
+                    android:id="@+id/message_stat_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+
+                    android:layout_marginRight="5dp"
+                    app:srcCompat="@drawable/ic_check" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
     </com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint>
 </LinearLayout>
 

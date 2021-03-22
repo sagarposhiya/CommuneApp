@@ -13,17 +13,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:paddingRight="10dp">
 
         <FrameLayout
             android:id="@+id/user_img_frame_lo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="2dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/user_photo"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:src="@drawable/user_img_wrapped"
                 app:civ_border_color="#ececec"
                 app:civ_border_width="1dp" />
@@ -56,6 +59,7 @@
             android:layout_toEndOf="@id/user_img_frame_lo"
             android:layout_toRightOf="@id/user_img_frame_lo"
             android:ellipsize="end"
+            android:fontFamily="@font/aa_app_font_median"
             android:maxLines="1"
             android:text="John Doe"
             android:textColor="@color/colorText"
@@ -72,6 +76,7 @@
             android:layout_marginTop="4dp"
             android:ellipsize="end"
             android:maxLines="1"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="OK Bro"
             android:textColor="@color/colorTextDesc" />
 
@@ -83,6 +88,7 @@
         android:layout_height="1.5dp"
         android:layout_below="@id/content"
         android:layout_marginTop="6dp"
+        android:visibility="gone"
         android:background="@color/colorDivider" />
 
 </RelativeLayout>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -34,9 +32,14 @@
 
         <include layout="@layout/item_reply" />
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="246dp"
+            android:layout_height="246dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="10dp">
         <RelativeLayout
-            android:layout_width="@dimen/img_width"
-            android:layout_height="@dimen/img_height">
+            android:layout_width="246dp"
+            android:layout_height="246dp">
 
             <ImageView
                 android:id="@+id/thumb_img"
@@ -76,11 +79,12 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/aa_app_font_reguler"
                     android:background="@drawable/rounded_bg"
-                    android:paddingLeft="4dp"
+                    android:paddingLeft="5dp"
                     android:paddingTop="2dp"
-                    android:paddingRight="4dp"
+                    android:paddingRight="5dp"
                     android:paddingBottom="2dp"
                     android:text="4 MB"
+                    android:textColor="@color/colorBlack"
                     android:textSize="12sp"
                   />
 
@@ -105,6 +109,8 @@
                     android:gravity="center"
                     android:paddingRight="5dp"
                     android:text="00:00"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="3dp"
                     android:textColor="@color/colorWhite"
                     android:textSize="11sp" />
 
@@ -115,7 +121,7 @@
                     android:layout_weight="1"
                     android:gravity="right"
                     android:fontFamily="@font/aa_app_font_reguler"
-                    android:paddingRight="5dp"
+                    android:paddingRight="8dp"
                     android:text="12:20 AM"
                     android:textColor="@color/colorWhite"
                     android:textSize="11sp" />
@@ -123,7 +129,7 @@
 
             </LinearLayout>
         </RelativeLayout>
-
+        </androidx.cardview.widget.CardView>
     </com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint>
 
 

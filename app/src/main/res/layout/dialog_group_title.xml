@@ -8,10 +8,13 @@
     <EditText
         android:id="@+id/et_group_title"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:layout_weight="1"
         android:hint="@string/group_hint"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:maxLength="25"
+
         android:maxLines="1"
 
         />
@@ -22,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="12dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:text="25" />
 
 

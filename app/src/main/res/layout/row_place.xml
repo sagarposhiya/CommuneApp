@@ -31,6 +31,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:text="TEST"
+        android:fontFamily="@font/aa_app_font_median"
         android:textColor="@color/colorText"
         app:layout_constraintStart_toEndOf="@+id/icon_location"
         app:layout_constraintTop_toTopOf="@+id/icon_location" />
@@ -40,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TEST"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:textColor="@color/colorTextDesc"
         app:layout_constraintStart_toStartOf="@+id/tv_place_name"
         app:layout_constraintTop_toBottomOf="@id/tv_place_name" />

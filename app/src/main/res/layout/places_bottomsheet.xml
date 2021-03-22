@@ -20,6 +20,7 @@
         android:drawablePadding="20dp"
         android:focusable="true"
         android:gravity="center_vertical"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:paddingStart="8dp"
         android:text="@string/select_this_location"
         android:textColor="@color/colorText"
@@ -30,7 +31,9 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,8 +41,9 @@
             android:layout_weight="1"
             android:paddingStart="8dp"
             android:paddingTop="8dp"
+            android:fontFamily="@font/aa_app_font_median"
             android:text="@string/nearby_places"
-            android:textColor="#80858A" />
+            android:textColor="#202021" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch_nearby_places"
@@ -53,6 +57,8 @@
         android:id="@+id/rv_places"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
 
 </LinearLayout>

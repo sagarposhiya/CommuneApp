@@ -63,7 +63,7 @@ open class BaseHolder(val context: Context, itemView: View) : RecyclerView.ViewH
                 quotedMessageFrame.visibility = View.GONE
             } else {
                 val quotedMessage = QuotedMessage.quotedMessageToMessage(message.quotedMessage)
-                quotedMessageFrame.setBackgroundColor(ContextCompat.getColor(context, R.color.quoted_received_background_color))
+//p                quotedMessageFrame.setBackgroundColor(ContextCompat.getColor(context, R.color.quoted_received_background_color))
                 tvQuotedName?.setTextColor(ContextCompat.getColor(context, R.color.quoted_received_text_color))
                 tvQuotedText?.setTextColor(ContextCompat.getColor(context, R.color.colorText))
                 quotedColor?.setBackgroundColor(ContextCompat.getColor(context, R.color.quoted_received_quoted_color))

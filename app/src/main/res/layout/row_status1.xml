@@ -8,8 +8,6 @@
     android:background="?attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true">
-
-
     <RelativeLayout
         android:id="@+id/image_layout"
         android:layout_width="wrap_content"

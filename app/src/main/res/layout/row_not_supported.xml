@@ -6,8 +6,6 @@
     android:orientation="horizontal"
     android:layout_marginTop="4dp"
     android:paddingLeft="6dp">
-
-
     <com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint
         android:layout_gravity="left"
         android:layout_width="wrap_content"

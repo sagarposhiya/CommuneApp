@@ -8,7 +8,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activities.MyStatusActivity"
     tools:showIn="@layout/activity_my_status">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_my_status"
         android:layout_width="0dp"
@@ -16,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+<!--premove activity-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

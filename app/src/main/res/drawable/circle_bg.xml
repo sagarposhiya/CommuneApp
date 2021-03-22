@@ -2,7 +2,7 @@
     android:shape="oval">
     <solid
 
-        android:color="#4def4b"/>
+        android:color="@color/all_btn_color"/>
 
     <stroke android:width="2dp"
         android:color="#ffffff"/>

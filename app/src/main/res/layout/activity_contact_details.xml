@@ -40,6 +40,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:layout_toStartOf="@+id/btn_add_contact"
             android:layout_toEndOf="@+id/img_contact_details"
             android:layout_toRightOf="@id/img_contact_details"
@@ -57,7 +58,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/all_btn_color"
             android:text="@string/add"
             android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="@+id/img_contact_details"
@@ -74,6 +75,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_contact_details"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
 </LinearLayout>
 

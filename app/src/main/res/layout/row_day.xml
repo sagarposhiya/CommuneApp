@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/margin_top_message"
     android:layout_marginBottom="@dimen/margin_bottom_message">
-
     <TextView
         android:layout_gravity="center_horizontal"
         android:id="@+id/tv_day"

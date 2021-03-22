@@ -23,10 +23,11 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/img_contact_pick"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
                     android:layout_centerVertical="true"
-                    android:layout_margin="16dp"
+                    android:layout_margin="7dp"
+                    android:padding="2dp"
                     android:src="@drawable/user_img_wrapped"
                  />
 
@@ -37,6 +38,9 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/img_contact_pick"
                     android:text="John Doe"
+                    android:textSize="18dp"
+                    android:paddingLeft="8dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:textColor="@color/colorText"
                     android:textStyle="bold" />
 
@@ -49,6 +53,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:visibility="gone"
             android:background="#e1e1e1" />
 
 

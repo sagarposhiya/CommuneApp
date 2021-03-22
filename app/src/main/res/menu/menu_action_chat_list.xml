@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/menu_item_delete"
-        android:icon="@drawable/delete_ic"
+        android:icon="@drawable/a_chat_delete"
         android:title="@string/delete"
         app:showAsAction="always" />
 
@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/menu_item_mute"
-        android:icon="@drawable/ic_volume_off"
+        android:icon="@drawable/a_ic_volume_off"
         android:title="@string/mute_notifications"
         app:showAsAction="always" />
 

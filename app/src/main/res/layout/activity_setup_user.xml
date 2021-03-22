@@ -8,7 +8,6 @@
     android:background="@color/bgColor"
     android:fitsSystemWindows="true"
     tools:context=".activities.setup.SetupUserActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center|left"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:text="@string/checking_contact"
         android:textColor="#000000"
         android:textSize="18sp" />

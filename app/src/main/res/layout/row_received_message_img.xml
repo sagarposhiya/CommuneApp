@@ -41,10 +41,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="246dp"
+                android:layout_height="246dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="4dp">
+
             <RelativeLayout
 
-                android:layout_width="@dimen/img_width"
-                android:layout_height="@dimen/img_height">
+                android:layout_width="246dp"
+                android:layout_height="246dp">
 
                 <ImageView
                     android:id="@+id/img_msg"
@@ -75,10 +81,11 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="4dp"
                         android:background="@drawable/rounded_bg"
-                        android:paddingLeft="4dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/colorBlack"
                         android:fontFamily="@font/aa_app_font_reguler"
                         android:paddingTop="2dp"
-                        android:paddingRight="4dp"
+                        android:paddingRight="5dp"
                         android:paddingBottom="2dp"
                         android:text="4 MB"
                         android:textSize="12sp" />
@@ -99,13 +106,14 @@
                     android:background="@drawable/bg_tv"
                     android:gravity="right"
                     android:paddingLeft="10dp"
+                    android:layout_marginRight="8dp"
                     android:paddingRight="4dp"
                     android:text="12:20 AM"
                     android:textColor="#efebe9"
                     android:textSize="11sp" />
             </RelativeLayout>
 
-
+            </androidx.cardview.widget.CardView>
         </FrameLayout>
 
     </com.devlomi.commune.views.backgroundtintlayouts.LinearLayoutWithBackgroundTint>

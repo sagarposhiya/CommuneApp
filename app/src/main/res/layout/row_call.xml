@@ -25,7 +25,6 @@
             android:layout_height="55dp"
             tools:src="@drawable/user_img_wrapped" />
 
-
         <com.devlomi.hidely.hidelyviews.HidelyImageView
             android:id="@+id/img_selected"
             android:layout_width="20dp"

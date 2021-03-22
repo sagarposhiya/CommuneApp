@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     android:background="@color/bgColor"
     android:orientation="vertical">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_chats"
         android:layout_width="match_parent"
