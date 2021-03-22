@@ -67,6 +67,7 @@
                     android:id="@+id/rv_horizontal_media"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    tools:listitem="@layout/row_media"
                     android:layout_below="@id/tv_count_media"
                     android:layout_marginTop="12dp" />
             </RelativeLayout>
@@ -77,6 +78,9 @@
             app:cardBackgroundColor="@color/cardBgColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="12dp">
 
             <LinearLayout
@@ -139,6 +143,9 @@
             android:id="@+id/about_and_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="12dp">
 
             <LinearLayout
@@ -301,26 +308,30 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/cardBgColor"
-            android:id="@+id/card_view_block"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            app:cardBackgroundColor="@color/cardBgColor"-->
+<!--            android:id="@+id/card_view_block"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp">-->
 
             <TextView
                 android:id="@+id/tv_block"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:drawableLeft="@drawable/ic_block_wrapped"
                 android:drawablePadding="8dp"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:padding="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/aa_block_bg"
                 android:text="@string/block_contact"
-                android:textColor="#000"
+                android:textColor="#fff"
                 android:drawableTint="@color/iconTintColor"/>
 
-        </androidx.cardview.widget.CardView>
+<!--        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             app:cardBackgroundColor="@color/cardBgColor"
