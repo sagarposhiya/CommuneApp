@@ -4,8 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/bgColor">
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="@font/aa_app_font_median"
+            android:text="Profile"
+            android:textColor="#000"
+            android:textSize="22dp" />
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -18,10 +43,10 @@
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/grey"
             android:src="@drawable/user_img_wrapped"
-            android:transitionName="profile_photo_trans" />
+            android:transitionName="profile_photo_trans"
+            app:civ_border_color="@color/grey"
+            app:civ_border_width="1dp" />
 
         <ImageButton
             android:id="@+id/image_button_change_user_profile"
@@ -36,71 +61,98 @@
 
     </FrameLayout>
 
-    <androidx.cardview.widget.CardView
-app:cardBackgroundColor="@color/cardBgColor"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:padding="3dp"
+            android:src="@drawable/a_profile_user" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aa_app_font_median"
+            android:padding="12dp"
+            android:textColor="@color/colorText"
+            android:textSize="18dp"
+            tools:text="John Doe" />
+
+        <ImageButton
+            android:id="@+id/image_button_edit_username"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            app:srcCompat="@drawable/a_edit_pen" />
+    </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tv_username"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="12dp"
-                android:textColor="@color/colorText"
-                tools:text="John Doe" />
-
-            <ImageButton
-                android:tint="@color/iconTintColor"
-                android:id="@+id/image_button_edit_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"
-                android:background="@null"
-                app:srcCompat="@drawable/ic_edit" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-app:cardBackgroundColor="@color/cardBgColor"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp">
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="12dp">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="3dp"
+                android:src="@drawable/a_ic_info" />
 
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About and Phone Number"
-                android:textColor="@color/colorText" />
-
-            <TextView
-                android:id="@+id/tv_status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                tools:text="www.Devlomi.com"
-                android:textColor="@color/colorText" />
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="8dp"
-                android:background="#e1e1e1" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="12dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aa_app_font_median"
+                    android:text="About and Phone Number"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/aa_app_font_reguler"
+                    android:textColor="@color/colorText"
+                    tools:text="www.Devlomi.com" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="3dp"
+                android:src="@drawable/a_ic_phone_white" />
 
             <TextView
                 android:id="@+id/tv_phone_number"
@@ -108,12 +160,12 @@ app:cardBackgroundColor="@color/cardBgColor"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:text="+1 111 111 111 "
+                android:paddingLeft="12dp"
+                android:fontFamily="@font/aa_app_font_reguler"
                 android:textColor="@color/colorText" />
-
-
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -15,7 +15,6 @@
         android:padding="12dp"
         android:textColor="#222121"
         android:textSize="15sp"
-
         tools:text="Test" />
 
     <androidx.appcompat.widget.AppCompatCheckBox

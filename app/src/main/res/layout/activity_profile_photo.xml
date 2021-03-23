@@ -25,7 +25,6 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-
         android:id="@+id/profile_full_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

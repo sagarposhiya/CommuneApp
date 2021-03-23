@@ -18,7 +18,7 @@
         android:tint="@color/iconTintColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_backup" />
+        app:srcCompat="@drawable/a_ic_back" />
 
     <TextView
         android:id="@+id/textView2"
@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/last_backup"
+        android:fontFamily="@font/aa_app_font_median"
         android:textColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -37,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         tools:text="February 1, 2019 4:23AM"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:textColor="@color/colorTextDesc"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -46,8 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/aa_c_btn_next"
         android:text="@string/backup"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/tv_last_backup"
         app:layout_constraintTop_toBottomOf="@+id/tv_last_backup" />

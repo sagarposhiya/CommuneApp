@@ -3,24 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activities.settings.SecurityPreferencesFragment">
 
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch_unlock_fingerprint"
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/unlock_with_fingerprint"
-        android:textColor="@color/colorText" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_margin="6dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_unlock_fingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aa_app_font_median"
+                android:text="@string/unlock_with_fingerprint"
+                android:textColor="@color/colorText" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="when enabled, you will use your fingerprint to open the app"
-        android:textColor="@color/colorTextDesc" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aa_app_font_reguler"
+                android:text="when enabled, you will use your fingerprint to open the app"
+                android:textColor="@color/colorTextDesc" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tv_lock_after"
@@ -28,7 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/lock_after"
-        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/aa_app_font_median"
+        android:textColor="@color/all_btn_color"
         android:textStyle="bold" />
 
     <RadioGroup
@@ -43,8 +68,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:text="@string/immediately"
-            android:textColor="@color/colorText" />
+            android:textColor="@color/colorText"
+            android:buttonTint="@color/all_btn_color"/>
 
 
         <RadioButton
@@ -52,6 +80,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/after_1_minute"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:buttonTint="@color/all_btn_color"
             android:textColor="@color/colorText" />
 
 
@@ -60,6 +91,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/after_5_minutes"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:buttonTint="@color/all_btn_color"
             android:textColor="@color/colorText" />
 
 
@@ -68,6 +102,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/after_30_minutes"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:buttonTint="@color/all_btn_color"
             android:textColor="@color/colorText" />
     </RadioGroup>
 

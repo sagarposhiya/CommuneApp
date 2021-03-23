@@ -6,26 +6,68 @@
     android:background="@color/bgColor"
     android:orientation="vertical">
 
-
-
-
-    <TextView
-        android:id="@+id/tv_profile"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:clickable="true"
-        android:drawableLeft="@drawable/ic_account_circle"
-        android:drawablePadding="16dp"
-        android:drawableTint="@color/iconTintLight"
-        android:focusable="true"
-        android:gravity="center_vertical"
-        android:padding="16dp"
-        android:text="@string/pref_header_profile"
-        android:textColor="@color/colorText"
-        android:textSize="16sp" />
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/aa_app_font_median"
+            android:text="@string/Settings"
+            android:textColor="#000"
+            android:textSize="22dp" />
 
 
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_account_circle"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/iconTintLight"
+            android:focusable="true"
+            android:fontFamily="@font/aa_app_font_median"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="@string/pref_header_profile"
+            android:textColor="@color/colorText"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
     <TextView
         android:id="@+id/tv_notifications"
         android:layout_width="match_parent"
@@ -38,11 +80,19 @@
         android:focusable="true"
         android:gravity="center_vertical"
         android:padding="16dp"
+        android:fontFamily="@font/aa_app_font_median"
         android:text="@string/pref_header_notifications"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
-
-
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
     <TextView
         android:id="@+id/tv_security"
         android:layout_width="match_parent"
@@ -53,12 +103,22 @@
         android:drawablePadding="16dp"
         android:drawableTint="@color/iconTintLight"
         android:focusable="true"
+        android:fontFamily="@font/aa_app_font_median"
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/security"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
 
     <TextView
         android:id="@+id/tv_chat"
@@ -70,12 +130,21 @@
         android:drawablePadding="16dp"
         android:drawableTint="@color/iconTintLight"
         android:focusable="true"
+        android:fontFamily="@font/aa_app_font_median"
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/pref_header_chat"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
-
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
     <TextView
         android:id="@+id/tv_privacy_policy"
         android:layout_width="match_parent"
@@ -88,11 +157,19 @@
         android:focusable="true"
         android:gravity="center_vertical"
         android:padding="16dp"
+        android:fontFamily="@font/aa_app_font_median"
         android:text="@string/privacy_policy"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
-
-
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
     <TextView
         android:id="@+id/tv_about"
         android:layout_width="match_parent"
@@ -103,11 +180,12 @@
         android:drawablePadding="16dp"
         android:drawableTint="@color/iconTintLight"
         android:focusable="true"
+        android:fontFamily="@font/aa_app_font_median"
         android:gravity="center_vertical"
         android:padding="16dp"
         android:text="@string/pref_header_about"
         android:textColor="@color/colorText"
-        android:textSize="16sp" />
-
+        android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

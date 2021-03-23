@@ -7,7 +7,6 @@
     android:orientation="vertical"
     tools:context=".activities.main.calls.CallsFragment"
     android:background="@color/bgColor">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_calls"
         android:layout_width="match_parent"

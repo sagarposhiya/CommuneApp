@@ -29,6 +29,7 @@ public class BackupChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_backup_chat);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorBlack));
         tvLastBackup = findViewById(R.id.tv_last_backup);
         btnBackup = findViewById(R.id.btn_backup);
         setSupportActionBar(toolbar);

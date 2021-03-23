@@ -11,7 +11,6 @@
     app:behavior_peekHeight="100dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-
     <TextView
         android:id="@+id/tv_cant_send_messages"
         android:layout_width="match_parent"

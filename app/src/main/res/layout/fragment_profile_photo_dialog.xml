@@ -19,9 +19,11 @@
         android:layout_height="wrap_content"
 
         android:background="#4d363636"
-        android:paddingBottom="20dp"
+        android:paddingBottom="15dp"
         android:paddingLeft="20dp"
-        android:paddingTop="20dp"
+        android:paddingTop="15dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/aa_app_font_median"
         android:text="John Doe"
         android:textColor="@android:color/white" />
 

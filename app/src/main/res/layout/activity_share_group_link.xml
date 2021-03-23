@@ -16,6 +16,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:paddingLeft="8dp"
+        android:fontFamily="@font/aa_app_font_reguler"
         android:paddingRight="8dp"
         android:text="@string/share_link_notice"
         android:textColor="@color/colorText" />
@@ -39,7 +40,7 @@
         android:paddingTop="15dp"
         android:paddingRight="8dp"
         android:paddingBottom="15dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_group_link_notice">
@@ -48,9 +49,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/circle_bg_blue"
             android:padding="6dp"
-            app:srcCompat="@drawable/ic_insert_link" />
+            app:srcCompat="@drawable/a_ic_ic_link" />
 
         <TextView
             android:textColor="@color/colorText"
@@ -58,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:layout_marginLeft="14dp"
             tools:text="http://devlomi.com/test" />
 
@@ -82,6 +83,7 @@
             android:gravity="center_vertical"
             android:paddingLeft="20dp"
             android:paddingTop="6dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:paddingRight="20dp"
             android:paddingBottom="6dp"
             android:text="@string/send_link_via_fireapp"
@@ -96,6 +98,7 @@
             android:layout_marginTop="16dp"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:drawablePadding="10dp"
             android:focusable="true"
             android:gravity="center_vertical"
@@ -115,6 +118,7 @@
             android:layout_marginTop="16dp"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:drawablePadding="10dp"
             android:focusable="true"
             android:gravity="center_vertical"
@@ -132,6 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:drawablePadding="10dp"

@@ -9,8 +9,6 @@
     android:fitsSystemWindows="true"
     tools:context=".activities.TextStatusActivity">
 
-
-
     <com.devlomi.commune.views.AutoResizeEditText
         android:id="@+id/et_status"
         android:layout_width="match_parent"

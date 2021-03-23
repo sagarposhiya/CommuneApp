@@ -12,7 +12,6 @@
         android:orientation="vertical"
         tools:context=".activities.authentication.EnterPhoneNumberFragment">
 
-
         <TextView
             android:id="@+id/tv_enter_phone_number"
             android:layout_width="wrap_content"

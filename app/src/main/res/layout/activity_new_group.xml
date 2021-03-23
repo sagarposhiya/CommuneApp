@@ -15,20 +15,36 @@
             android:id="@+id/toolbar_forward"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/white"
             app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_back">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
 
                 <TextView
                     android:id="@+id/toolbar_title"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/new_group"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -36,7 +52,10 @@
                     android:id="@+id/tv_add_participants_tv_toolbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/aa_app_font_reguler"
                     android:text="@string/add_participants" />
+                </LinearLayout>
 
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -56,6 +75,8 @@
             android:id="@+id/rv_selected_users_new_group"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="8dp">
 
         </androidx.recyclerview.widget.RecyclerView>
@@ -63,7 +84,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_group"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
 
 
     </LinearLayout>
