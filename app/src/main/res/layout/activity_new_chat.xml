@@ -19,7 +19,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?attr/colorPrimary"
+            android:background="@color/white"
             app:contentInsetLeft="0dp"
             app:contentInsetStart="0dp"
             app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
@@ -70,6 +70,9 @@
             android:id="@+id/tv_no_contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/aa_app_font_reguler"
+            android:textSize="18dp"
+            android:text="bhb"
             android:textStyle="bold" />
 
         <Button
@@ -77,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/aa_c_btn_next"
             android:text="@string/invite"
             android:textColor="@color/white" />
 

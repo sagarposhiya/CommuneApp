@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MyStatusActivity">
-
+<!--//dont use-->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/white"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -32,6 +32,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:tint="@color/white"
 
+        app:backgroundTint="@color/all_btn_color"
         app:srcCompat="@drawable/ic_photo_camera" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -51,8 +52,8 @@
         android:layout_gravity="top|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_edit"
-        app:backgroundTint="@color/colorGreen"
-        android:tint="@color/white"
+        app:backgroundTint="@color/white"
+        android:tint="@color/all_btn_color"
         app:layout_anchor="@id/fab_invisible"
         app:layout_anchorGravity="top" />
 

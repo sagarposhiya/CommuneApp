@@ -49,6 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="John Doe"
+                        android:fontFamily="@font/aa_app_font_median"
                         android:textColor="#ffffff" />
 
 
@@ -57,6 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:fontFamily="@font/aa_app_font_reguler"
                         android:text="Today, 9:30PM"
                         android:textColor="#d7ccc8" />
                 </LinearLayout>

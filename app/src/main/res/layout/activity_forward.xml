@@ -14,23 +14,27 @@
             android:id="@+id/toolbar_forward"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/white"
             app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+            app:title="@string/send_to_toolbar_title"
 
-            app:title="@string/send_to_toolbar_title" />
+            app:titleTextColor="@color/colorBlack" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <RelativeLayout
-        android:background="@color/bgColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bgColor"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_forward"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
 
 
         <TextView
@@ -38,11 +42,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary"
-            android:paddingBottom="20dp"
+            android:background="@color/all_btn_color"
             android:paddingLeft="2dp"
+            android:fontFamily="@font/aa_app_font_reguler"
             android:paddingTop="12dp"
-            android:textColor="@color/colorWhite"
+            android:paddingBottom="20dp"
+            android:textColor="@color/colorBlack"
             android:textSize="16sp"
             android:visibility="invisible" />
 
@@ -55,9 +60,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_marginRight="8dp"
+        android:tint="@color/white"
         android:src="@android:drawable/ic_menu_send"
         android:visibility="invisible"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@color/all_btn_color"
         app:fabSize="normal" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

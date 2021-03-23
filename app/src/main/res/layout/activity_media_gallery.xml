@@ -34,7 +34,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_media_gallery"
         android:layout_width="match_parent"

@@ -16,7 +16,6 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/white"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_backup_chat" />
