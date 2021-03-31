@@ -9,7 +9,7 @@
     app:behavior_peekHeight="80dp"
     app:layout_behavior="@string/bottom_sheet_behavior"
 
-    android:visibility="visible"
+    android:visibility="gone"
     >
 
     <ImageView
